@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>شهادة تقدير فريق الأخبار 🍫</title>
+    <!-- استدعاء خطوط أنيقة ومميزة من جوجل -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amiri:ital,wght@0,700;1,700&family=Great+Vibes&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- مكتبات خارجية -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+<div class="controls">
+    <label>اكتب الاسم هنا يا بطل: </label>
+    <input type="text" id="nameInput" placeholder="اكتب اسمك...">
+    <div class="buttons">
+        <button onclick="generate()">استلم الشهادة 🍫</button>
+        <button id="downloadBtn" style="display:none;" onclick="downloadCert()">تحميل الشهادة 📥</button>
+    </div>
+</div>
+
+<div class="certificate-container" id="cert">
+    <img src="certificate.jpg" class="cert-bg" alt="Certificate">
+    <div id="displayName"></div>
+    <div class="choco-bar">🍫</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
